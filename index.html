@@ -1,0 +1,70 @@
+4"}
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Husband ❤️</title>
+
+<style>
+body{
+background: linear-gradient(#ff758c,#ff7eb3);
+text-align:center;
+font-family: Arial;
+color:white;
+margin-top:80px;
+overflow:hidden;
+}
+
+h1{font-size:38px;}
+p{font-size:22px;}
+
+.btn{
+padding:15px 28px;
+font-size:20px;
+border:none;
+border-radius:40px;
+margin:15px;
+position:relative;
+}
+
+#yes{
+background:#ff0055;
+color:white;
+}
+
+#no{
+background:white;
+color:#ff0055;
+position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>My Dear Husband Narayan ❤️</h1>
+<p>You make my world brighter every single day.</p>
+<p>I am lucky to be your wife.</p>
+
+<h2>Will you be my Valentine? 💖</h2>
+
+<button id="yes" class="btn" onclick="love()">YES 💘</button>
+<button id="no" class="btn" onmouseover="moveNo()">NO 😜</button>
+
+<p id="msg"></p>
+
+<script>
+function love(){
+document.getElementById("msg").innerHTML =
+"I knew you would say YES 😍 I Love You Forever ❤️ — Yours, Shwetha";
+}
+
+function moveNo(){
+var x = Math.random()*300;
+var y = Math.random()*300;
+document.getElementById("no").style.left = x + "px";
+document.getElementById("no").style.top = y + "px";
+}
+</script>
+
+</body>
+<
