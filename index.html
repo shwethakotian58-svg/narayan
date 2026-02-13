@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Husband ❤️</title>
+
+<style>
+body{
+background: linear-gradient(#ff758c,#ff7eb3);
+text-align:center;
+font-family: Arial;
+color:white;
+padding:40px 15px;
+overflow:hidden;
+}
+
+h1{font-size:30px;}
+p{font-size:20px; line-height:1.6;}
+
+.buttons{
+margin-top:25px;
+position:relative;
+height:120px;
+}
+
+button{
+padding:14px 26px;
+font-size:20px;
+border:none;
+border-radius:40px;
+margin:10px;
+cursor:pointer;
+}
+
+#yes{
+background:#ff0055;
+color:white;
+}
+
+#no{
+background:white;
+color:#ff0055;
+position:absolute;
+left:55%;
+top:40px;
+}
+
+#msg{
+margin-top:40px;
+font-size:22px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>My Dear Husband, Narayan ❤️</h1>
+
+<p>You came into my life and made everything beautiful.</p>
+<p>You are my happiness, my peace, and my forever person.</p>
+
+<h2>Will you be my Valentine? 💖</h2>
+
+<div class="buttons">
+<button id="yes" onclick="showLove()">Yes ❤️</button>
+<button id="no">No 😜</button>
+</div>
+
+<p id="msg"></p>
+
+<script>
+
+function showLove(){
+document.getElementById("msg").innerHTML =
+"I knew it! 😍<br>I love you so much baby 💞<br>Forever yours ❤️";
+}
+
+function moveButton(){
+var btn = document.getElementById("no");
+var x = Math.random() * (window.innerWidth - 120);
+var y = Math.random() * (window.innerHeight - 200);
+btn.style.left = x + "px";
+btn.style.top = y + "px";
+}
+
+/* mobile touch /
+document.getElementById("no").addEventListener("touchstart", moveButton);
+
+/ mouse */
+document.getElementById("no").addEventListener("mouseover", moveButton);
+
+</script>
+
+</body>
+</ht
